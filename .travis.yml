@@ -1,7 +1,17 @@
 install:
-  # Unsure if all is needed
-  - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended
-  # ebook-convert
+  # texlive
+  - sudo apt-get install -qq texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended 
+  # ocaml](http://ocaml.org/)
+  - sudo apt-get install -qq ocaml
+  # hevea
+  - sudo apt-get install -qq hevea
+  # imagemagick
+  - sudo apt-get install -qq imagemagick
+  # Python 2
+  - sudo apt-get install -qq python2
+  # Flask
+  - sudo apt-get install -qq flask
+  # Calibre, for ebook-convert
   - sudo apt-get install -qq calibre
   # epubcheck
   - sudo apt-get install -qq epubcheck
