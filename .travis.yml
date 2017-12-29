@@ -1,23 +1,9 @@
 install:
-  # texlive
-  - sudo apt-get install -qq texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended 
-  # ocaml](http://ocaml.org/)
-  - sudo apt-get install -qq ocaml
-  # hevea
-  - sudo apt-get install -qq hevea
-  # imagemagick
-  - sudo apt-get install -qq imagemagick
-  # Python 2
-  - sudo apt-get install -qq python2.7
-  # Flask
-  - sudo apt-get install -qq python-flask
-  # Calibre, for ebook-convert
-  - sudo apt-get install -qq calibre
-  # epubcheck
-  - sudo apt-get install -qq epubcheck
+  - sudo apt-get install -qq texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended ocaml hevea imagemagick python2.7 python-flask calibre epubcheck
 
 script:
   - wget https://raw.githubusercontent.com/richelbilderbeek/travis_pandoc_tex_to_epub/master/example.tex
   - cat example.tex
-  - python tex2ebook.py example.tex
+  - python tex2ebook.py example.tex -o example.epub
+  - cat example.epub
   - epubcheck example.epub
