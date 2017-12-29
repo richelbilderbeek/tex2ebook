@@ -1,6 +1,10 @@
 install:
   # Unsure if all is needed
-  - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended epubcheck
+  - sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra texlive-fonts-extra texlive-fonts-recommended
+  # ebook-convert
+  - sudo apt-get install -qq calibre
+  # epubcheck
+  - sudo apt-get install -qq epubcheck
 
 script:
   - wget https://raw.githubusercontent.com/richelbilderbeek/travis_pandoc_tex_to_epub/master/example.tex
