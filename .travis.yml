@@ -7,8 +7,6 @@ install:
   - sudo apt-get install -qq hevea
   # imagemagick
   - sudo apt-get install -qq imagemagick
-  # Python 2
-  - sudo apt-get install -qq python2
   # Flask
   - sudo apt-get install -qq flask
   # Calibre, for ebook-convert
