@@ -10,7 +10,7 @@ install:
   # Python 2
   - sudo apt-get install -qq python2.7
   # Flask
-  - sudo apt-get install -qq flask
+  - sudo apt-get install -qq python-flask
   # Calibre, for ebook-convert
   - sudo apt-get install -qq calibre
   # epubcheck
