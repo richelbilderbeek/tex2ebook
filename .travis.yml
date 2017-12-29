@@ -3,5 +3,5 @@ install:
 
 script:
   - wget https://raw.githubusercontent.com/richelbilderbeek/travis_pandoc_tex_to_epub/master/example.tex
-  - tex2ebook.py example.tex
+  - python tex2ebook.py example.tex
   - epubcheck example.epub
